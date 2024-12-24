@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00; /* Yellow color as per your design */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    background-color: #0066cc; /* Dark Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
+footer {
+    background-color: #ffcc00; /* Yellow footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="file"] {
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+}
